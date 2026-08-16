@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+.pytest_cache/
+coverage.*
+.coverage
+
+# KeyMaker store - never commit generated certs or keys
+*.pfx
+*.cer
+*.pem
+*.key
+*.sig
+*.meta
+~/.keymaker/
+
+# OS
+.DS_Store
+Thumbs.db

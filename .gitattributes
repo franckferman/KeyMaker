@@ -1,0 +1,33 @@
+# Auto-detect text files, normalize line endings to LF
+* text=auto
+
+# Python
+*.py   text eol=lf
+*.toml text eol=lf
+*.cfg  text eol=lf
+
+# Shell / Make
+Makefile text eol=lf
+*.sh     text eol=lf
+
+# Docs
+*.md  text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Crypto / binary artifacts — never diff, never mangle
+*.pfx  binary
+*.cer  binary
+*.p12  binary
+*.der  binary
+*.sig  binary
+*.meta binary
+*.exe  binary
+*.dll  binary
+*.sys  binary
+
+# Export exclusions (omitted from `git archive` / GitHub source tarballs)
+.gitignore     export-ignore
+.gitattributes export-ignore
+tests/         export-ignore
+Makefile       export-ignore

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keymaker"
+version = "1.0.0"
+description = "Authenticode forge - cert generation, PE signing, signature theft and domain cloning."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8", "isort"]
+
+[project.scripts]
+keymaker = "keymaker.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["keymaker*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
